@@ -1,0 +1,5 @@
+# files created during and after compilation
+bin/
+
+# test files
+test/
