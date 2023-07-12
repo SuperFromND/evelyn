@@ -141,14 +141,14 @@ void png_to_bytes(char* path) {
             // so this dumb solution i came up with maintains two nibbles, A and B, and then adds them together
             // and then pushes that result into memory. horrible. terrible. but apparently it works almost
             if (gray >= 127) {
-                if (index%2 == 0) {nibble_a = 0x0F;} else {nibble_b = 0x0F;}
+                if (index%2 == 0) {nibble_a = 0xF0;} else {nibble_b = 0xF0;}
             } else {
                 if (index%2 == 0) {nibble_a = 0x00;} else {nibble_b = 0x00;}
             }
 
             // every other instance of this forloop, we add the two nibbles together here
             if (index%2==1) {
-                uint8_t byte = (nibble_a << 4) | nibble_b;
+                uint8_t byte = (nibble_a >> 4) | nibble_b;
 
                 // more debugging stuff dont worry about this
                 //printf("%02x", byte);
