@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/SuperFromND/evelyn/main/res/logo.svg)
+![](https://raw.githubusercontent.com/SuperFromND/evelyn/master/res/logo.svg)
 ---
 ***Evelyn*** is a tool for creating dummy PlayStation 1 save files with custom icons. It was created specifically for the [PocketStation](https://en.wikipedia.org/wiki/PocketStation) peripheral, which has the ability to display save icons on a black-and-white LCD.
 
